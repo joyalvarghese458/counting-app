@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import Button from 'react-bootstrap/Button';
+
 import './App.css';
+import Counder from './Counder';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='d-flex align-items-center justify-content-center w-100 flex-column' style={{height:'100vh'}}>
+        <div className='d-flex align-items-center flex-column p-5 rounded' style={{backgroundColor:'white'}}>
+        <h1>Counting App</h1>
+       <Counder/>
+        </div>
+      </div>
+    </>
   );
 }
 
